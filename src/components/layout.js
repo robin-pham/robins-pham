@@ -14,7 +14,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header title={`Hi, we're each named Robin Pham`} />
+      <Header title={`Hi, we're Robin Pham`} />
       <div
         style={{
           margin: `0 auto`,
