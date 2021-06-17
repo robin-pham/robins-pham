@@ -1,10 +1,23 @@
-import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import { SocialIcon } from "react-social-icons";
+import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
+
+const Socials = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export const RobinCard = ({
   picSrc = "../images/default.png",
   occupation = "N/A",
   location = "N/A",
+  socials = [],
+}: {
+  picSrc: string;
+  occupation?: string;
+  location?: string;
+  socials?: string[];
 }) => {
   return (
     <div
@@ -21,9 +34,16 @@ export const RobinCard = ({
         style={{ marginBottom: `1.45rem` }}
         width={150}
       />
-      <img src="" alt="" />
       <div>{occupation}</div>
       <div>{location}</div>
+      <Socials>
+        {socials.map((url) => (
+          <SocialIcon
+            style={{ width: 32, height: 32, marginRight: 4 }}
+            url={url}
+          />
+        ))}
+      </Socials>
     </div>
-  )
-}
+  );
+};

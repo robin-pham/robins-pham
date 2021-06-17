@@ -5,3 +5,5 @@
  */
 
 // You can delete this file if you're not using it
+import "@fontsource/aileron" // Defaults to weight 400 with all styles included.
+import "@fontsource/assistant" // Defaults to weight 400 with all styles included.
