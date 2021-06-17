@@ -1,9 +1,8 @@
 export interface RobinData {
-  id: string
-  picSrc?: string
-  occupation?: string
-  location?: string
-  socials?: Social[]
+  id: string;
+  name: string;
+  picSrc?: string;
+  occupation?: string;
+  location?: string;
+  socials?: string[];
 }
-
-type Social = any
